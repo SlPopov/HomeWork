@@ -1,0 +1,13 @@
+#!/bin/bash
+ls
+mkdir new_folder1 new_folder2
+cd new_folder1
+touch file1.txt file2.txt
+echo "1234" > file1.txt
+cat file1.txt
+ls
+mv file2.txt ../new_folder2/
+cd ../new_folder2
+echo '"name": "test"' > file2.txt
+grep -q "name" file2.txt;
+echo "Баш-скрипт успішно відпрацював"
